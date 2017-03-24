@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="131px" height="20px" viewBox="0 0 131 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>FOODHA</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-weight="bold" font-family="Montserrat-Bold, Montserrat" letter-spacing="2.5" font-size="26.25">
+        <g id="Header" transform="translate(-72.000000, -28.000000)" fill="#DE7047">
+            <g transform="translate(13.000000, 21.000000)" id="LOGO">
+                <g>
+                    <text id="FOODHA">
+                        <tspan x="58" y="26">FOODHA</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,41 +1,130 @@
-/*-------------- Body -------------------*/
+/*--------------- Body ---------------*/
+
 
 body {
   margin: 0;
   padding: 0;
 }
 
-.navbar {
-  padding-top: 0;
-  margin-top: 0;
+
+/*--------------- Nav ---------------*/
+
+
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-family:
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
 }
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:7px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{
+  z-index:1000000; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;
+}
+.menu ul {
+  margin: 0; padding: 0; list-style-type: none; list-style-image: none;
+}
+.menu li {
+  display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;
+}
+.menu li:hover{
+  display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;
+}
+.menu ul li a {
+  text-decoration:none;  margin: 0px; color:#666;
+}
+.menu ul li a:hover {
+    color: #666; text-decoration:none;
+  }
+.menu a{
+  text-decoration:none; color:#666;
+}
+.menu a:hover{
+  text-decoration:none; color:#666;
+}
+
+.glyphicon-home{
+  color:white;
+  font-size:1.5em;
+  margin-top:5px;
+  margin:0 auto;
+}
+header{display:inline-block; font-size:12px;}
+span{padding-left:20px;}
+a{color:#336699;}
+
+
+/*--------------- Divs ---------------*/
+
+.container-fluid {
+  padding: 0;
+}
+
+header {
+	width:100%;
+	background:#ffffff opacity: 0.4;
+	height:60px;
+	line-height:60px;
+	/*border-bottom:1px solid #dddddd opacity: 0.4;*/
+}
+
 
 .jumbotron {
-  height: 60vh;
-  background: url(../img/callout-bg.jpg) 0/cover no-repeat;
+  min-height: 60vh;
+  background: url(../img/callout-bg-dark.png) no-repeat scroll top left/cover;
+  /*background-size: cover;*/
   text-align: center;
   padding-top: 10%;
+    margin-top: -70px;
 }
 
-.hometext {
+.jumbotron h1 {
+  font-size: 6.8vh;
+  padding-top: 15%;
+}
+
+.home {
+  padding-top: 50;
+}
+
+.column-callouts {
   text-align: center;
-  padding: 5%;
+  /*padding: 5%;*/
   }
 
-.hometext img {
+.column-callouts img {
 }
 
-.hometext h3 {
-  margin: 15px;
-  padding-bottom: 10px;
+.column-callouts h3 {
+  /*margin: 15px;
+  padding-bottom: 10px;*/
 }
 
-.hometext .btn-default {
-  font-size: 10px;
-}
-
-.home.container-fluid {
-  padding: 10px;
+.column-callouts .btn-default {
+  /*font-size: 10px;*/
 }
 
 .icons {
@@ -80,10 +169,11 @@ body {
 }
 
 
-/* -------------- Font -----------------*/
+/*--------------- Fonts ---------------*/
+
 
 h1 {
-  font: 600 6.5vh 'Montserrat', sans-serif;
+  font: 600 15vh 'Montserrat', sans-serif;
   color: white;
 }
 
@@ -100,15 +190,17 @@ h4 {
   text-align: right;
 }
 
-/* -------------- Media Queries -------------- */
+
+/*----------- Media Queries -----------*/
+
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 
-h1 {
+/*h1 {
     font-size:9vw;
     padding-top: 7%;
-}
+}*/
 
   h2 {
     font-size: 35px;
@@ -146,10 +238,10 @@ h1 {
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
 
-  h1 {
+  /*h1 {
       font-size:8vw;
       padding-top: 3%;
-  }
+  }*/
 
   h2 {
     font-size: 40px;
@@ -193,15 +285,13 @@ h1 {
 
 }
 
- }
-
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
 
-  h1 {
+  /*h1 {
       font-size:3vw;
       padding-top: 50%;
-  }
+  }*/
 
   /*h2 {
     font-size: 65px;
@@ -268,10 +358,10 @@ h1 {
 }
 
 
-h1 {
+/*h1 {
     font-size:5.8vw;
     padding-top: 5%;
-}
+}*/
 
   h2 {
     font-size: 65px;
