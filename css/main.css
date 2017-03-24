@@ -6,6 +6,29 @@ body {
   padding: 0;
 }
 
+.container-fluid {
+  padding: 0;
+}
+
+h1 {
+    font: 600 15vh 'Montserrat', sans-serif;
+    color: white;
+}
+
+h2 {
+  font: 600 5.5vh 'Montserrat', sans-serif;
+}
+
+h3 {
+  font: 300 2.5vh/2.5 'Open Sans', sans-serif;
+}
+
+h4 {
+  font: 400 italic 4vh/3 'Open Sans', sans-serif;
+  text-align: right;
+}
+
+
 
 /*--------------- Nav ---------------*/
 
@@ -65,78 +88,22 @@ body {
 .menu a:hover{
   text-decoration:none; color:#666;
 }
-
 .glyphicon-home{
   color:white;
   font-size:1.5em;
   margin-top:5px;
   margin:0 auto;
 }
-header{display:inline-block; font-size:12px;}
+header{display:inline-block; font-size:5vh;}
 span{padding-left:20px;}
 a{color:#336699;}
-
-
-/*--------------- Divs ---------------*/
-
-.container-fluid {
-  padding: 0;
-}
-
-header {
-	width:100%;
-	background:#ffffff opacity: 0.4;
-	height:60px;
-	line-height:60px;
-	/*border-bottom:1px solid #dddddd opacity: 0.4;*/
-}
-
-
-.jumbotron {
-  min-height: 60vh;
-  background: url(../img/callout-bg-dark.png) no-repeat scroll top left/cover;
-  /*background-size: cover;*/
-  text-align: center;
-  padding-top: 10%;
-    margin-top: -70px;
-}
-
-.jumbotron h1 {
-  font-size: 6.8vh;
-  padding-top: 15%;
-}
-
-.home {
-  padding-top: 50;
-}
-
-.column-callouts {
-  text-align: center;
-  /*padding: 5%;*/
-  }
-
-.column-callouts img {
-}
-
-.column-callouts h3 {
-  /*margin: 15px;
-  padding-bottom: 10px;*/
-}
-
-.column-callouts .btn-default {
-  /*font-size: 10px;*/
-}
-
-.icons {
-}
-
-.quote-text h2 {
-  font: 500 4vh 'Montserrat', sans-serif;
-}
-
 .navbar-toggler {
   vertical-align: baseline;
 }
+
+
+/*--------------- Buttons ---------------*/
+
 
 .btn-secondary {
     font: regular small-caps bold 17px/0 'Montserrat', sans-serif;
@@ -169,26 +136,70 @@ header {
 }
 
 
-/*--------------- Fonts ---------------*/
+/*--------------- Divs ---------------*/
 
 
-h1 {
-  font: 600 15vh 'Montserrat', sans-serif;
-  color: white;
+header {
+	width:100%;
+	background:#ffffff opacity: 0.4;
+	height:60px;
+	line-height:60px;
+	/*border-bottom:1px solid #dddddd opacity: 0.4;*/
 }
 
-h2 {
-  font: 600 5.5vh 'Montserrat', sans-serif;
+.jumbotron-fluid {
+  height: 85vh;
+  background: url(../img/callout-bg-dark.png) no-repeat scroll top left/cover;
+  /*background-size: cover;*/
+  text-align: center;
+  padding-top: 10%;
+  margin-top: -70px;
 }
 
-h3 {
-  font: 300 2.5vh/2.5 'Open Sans', sans-serif;
+.jumbotron-fluid h1 {
+  font-size: 6.8vh;
+  padding-top: 25vh;
 }
 
-h4 {
-  font: 400 italic 4vh/3 'Open Sans', sans-serif;
-  text-align: right;
+.home {
+  padding-top: 50;
 }
+
+.column-callouts {
+  text-align: center;
+  /*padding: 5%;*/
+  }
+
+.column-callouts h2 {
+    margin: 5vh;
+    /*padding-bottom: 3vh;*/
+  }
+
+.column-callouts h3 {
+  margin: 15px;
+  padding-bottom: 10px;
+}
+
+.column-callouts .btn {
+  font-size: 2.3vh;
+  margin-bottom: 50px;
+}
+
+.quote-container {
+  /*font: 500 4vh 'Montserrat', sans-serif;*/
+  margin-top: 5vh;
+}
+
+.quote-text h2 {
+  font-size: 4vh;
+}
+
+.quote-text i {
+  font-size: 4vh;
+}
+
+
+
 
 
 /*----------- Media Queries -----------*/
@@ -197,10 +208,12 @@ h4 {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 
-/*h1 {
+h1 {
     font-size:9vw;
     padding-top: 7%;
-}*/
+}
+
+
 
   h2 {
     font-size: 35px;
@@ -238,10 +251,6 @@ h4 {
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
 
-  /*h1 {
-      font-size:8vw;
-      padding-top: 3%;
-  }*/
 
   h2 {
     font-size: 40px;
@@ -301,6 +310,7 @@ h4 {
     font-size: 25px;
   }*/
 
+
   .hometext {
     text-align: center;
     padding-top: 75px;
@@ -317,9 +327,14 @@ h4 {
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
 
-  .jumbotron {
-    height: 800px;
+  .jumbotron-fluid h1 {
+    font-size: 6.8vh;
+    padding-top: 0%;
+  }
 
+  .jumbotron-fluid {
+    height: 60vh;
+  }
 
   /*.btn-default {
     font-size: 45px;
@@ -356,6 +371,7 @@ h4 {
 .hometext a {
   font-size: 45px;
 }
+
 
 
 /*h1 {
