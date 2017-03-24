@@ -1,9 +1,10 @@
-/*--------------- Body ---------------*/
+/*--------------- Body Defaults ---------------*/
 
 
 body {
   margin: 0;
   padding: 0;
+  /*background-image: url(../img/texture-white.png);*/
 }
 
 .container-fluid {
@@ -11,7 +12,7 @@ body {
 }
 
 h1 {
-    font: 600 15vh 'Montserrat', sans-serif;
+    font: 600 8vh 'Montserrat', sans-serif;
     color: white;
 }
 
@@ -27,7 +28,6 @@ h4 {
   font: 400 italic 4vh/3 'Open Sans', sans-serif;
   text-align: right;
 }
-
 
 
 /*--------------- Nav ---------------*/
@@ -136,48 +136,36 @@ a{color:#336699;}
 }
 
 
-/*--------------- Divs ---------------*/
+/*--------------- Divs - Mobile First ---------------*/
 
-
-header {
-	width:100%;
-	background:#ffffff opacity: 0.4;
-	height:60px;
-	line-height:60px;
-	/*border-bottom:1px solid #dddddd opacity: 0.4;*/
+.nav-header {
+  font-size: 4.5vh;
 }
 
 .jumbotron-fluid {
   height: 85vh;
   background: url(../img/callout-bg-dark.png) no-repeat scroll top left/cover;
-  /*background-size: cover;*/
   text-align: center;
-  padding-top: 10%;
-  margin-top: -70px;
+  margin-top: -10vh;
 }
 
 .jumbotron-fluid h1 {
-  font-size: 6.8vh;
-  padding-top: 25vh;
-}
-
-.home {
-  padding-top: 50;
+  font-size: 6.5vh;
+  padding: 40% 5%;
 }
 
 .column-callouts {
   text-align: center;
-  /*padding: 5%;*/
   }
 
 .column-callouts h2 {
+    font-size: 5.5vh;
     margin: 5vh;
-    /*padding-bottom: 3vh;*/
   }
 
 .column-callouts h3 {
-  margin: 15px;
-  padding-bottom: 10px;
+  padding: 0 2vh 5vh 2vh;
+  margin: 1vh;
 }
 
 .column-callouts .btn {
@@ -186,20 +174,45 @@ header {
 }
 
 .quote-container {
-  /*font: 500 4vh 'Montserrat', sans-serif;*/
-  margin-top: 5vh;
+  padding-top: 10vh;
+  margin: 0 auto;
+  background-color: white;
 }
 
-.quote-text h2 {
+.quote-text h3 {
   font-size: 4vh;
+  margin: 0 2vh;
 }
 
 .quote-text i {
   font-size: 4vh;
+  margin: 0 2vh;
 }
 
+.quote-text h4 {
+  font-size: 4vh;
+  margin: 0 5vh 5vh 0;
+}
 
+.footer {
+  width: 100%;
+}
 
+li {
+  margin: 0, auto;
+  list-style: none;
+  display: inline;
+  text-align: center;
+}
+
+/*.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #f5f5f5;
+}*/
 
 
 /*----------- Media Queries -----------*/
@@ -208,119 +221,98 @@ header {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 
-h1 {
-    font-size:9vw;
-    padding-top: 7%;
-}
-
-
-
-  h2 {
-    font-size: 35px;
+  .jumbotron-fluid h1 {
+    padding: 35% 5%;
   }
 
-  h3 {
-    font-size: 13px;
-    line-height: 30px;
-  }
-
-  .hometext {
-    text-align: center;
-        margin-top: 10px;
-    /*padding-top: 5px;*/
+  .column-callouts h2 {
+      font-size: 3.9vh;
     }
 
-  .hometext h3 {
-
-    /*padding-bottom: 5px;*/
+  .column-callouts h3 {
+    font-size: 1.9vh;
   }
 
-  .btn-primary {
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 1.5px;
-    font-size: 10px;
-    padding: 10px 70px;
-    margin-top: 30px;
-    border-color: orange;
-    background-color: orange;
+  .column-callouts .btn {
+    font-size: 1.2vh;
   }
-}
 
+  .quote-text h3 {
+    font-size: 4vh;
+    margin: 0 10vh;
+  }
+
+  .quote-text i {
+    font-size: 4vh;
+    margin: 0 10vh;
+  }
+
+  .quote-text h4 {
+    font-size: 4vh;
+    margin: 0 10vh 5vh 0;
+  }
 
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
 
-
-  h2 {
-    font-size: 40px;
+  .jumbotron-fluid h1 {
+    padding: 28% 5%;
   }
 
-  h3 {
-    font-size: 16px;
-    line-height: 40px;
-}
-
-.btn-primary {
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: 1.5px;
-  font-size: 10px;
-  padding: 10px 70px;
-  margin-top: 15px;
-  border-color: orange;
-  background-color: orange;
-}
-
-  .hometext {
-    text-align: center;
-    margin-top: 30px;
-    /*padding-top: 40px;*/
+  .column-callouts h2 {
+      font-size: 3.9vh;
     }
 
-  .hometext h2 {
-    margin: 20px;
-    /*padding-bottom: 10px;*/
+  .column-callouts h3 {
+    font-size: 1.9vh;
   }
-  /*.btn-default {
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 1.5px;
-    color: black;
-    width: 200px;
-    padding: 15px;
-    margin: 0px 0px 0px 0px;
-    border-color: orange;
-    background-color: orange;
-  }*/
+
+  .column-callouts .btn {
+    font-size: 1.9vh;
+  }
+
+  .quote-text h4 {
+    font-size: 4vh;
+    margin: 0 15vh 5vh 0;
+  }
 
 }
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
 
-  /*h1 {
-      font-size:3vw;
-      padding-top: 50%;
-  }*/
-
-  /*h2 {
-    font-size: 65px;
+  .jumbotron-fluid h1 {
+    padding: 22% 15%;
   }
 
-  h3 {
-    font-size: 25px;
-  }*/
-
-
-  .hometext {
-    text-align: center;
-    padding-top: 75px;
-    /*padding-bottom: 50px;*/
+  .column-callouts h2 {
+      font-size: 5vh;
     }
 
-  .hometext h3 {
-    margin: 105px;
-    /*padding-bottom: 50px;*/
+  .column-callouts h3 {
+    font-size: 2.8vh;
   }
+
+  .column-callouts .btn {
+    font-size: 1.9vh;
+  }
+
+  .quote-text h3 {
+    font-size: 4vh;
+    margin: 0 25vh;
+  }
+
+  .quote-text i {
+    font-size: 4vh;
+    margin: 0 25vh;
+  }
+
+  .quote-text h4 {
+    font-size: 4vh;
+    margin: 0 25vh 5vh 0;
+  }
+
 
 }
 
@@ -328,96 +320,36 @@ h1 {
 @media (min-width: 1200px) {
 
   .jumbotron-fluid h1 {
-    font-size: 6.8vh;
-    padding-top: 0%;
+    font-size: 7.5vh;
+    padding: 15% 20%;
   }
 
-  .jumbotron-fluid {
-    height: 60vh;
-  }
-
-  /*.btn-default {
-    font-size: 45px;
-    letter-spacing: 1.5px;
-    color: black;
-    width: 200px;
-    padding: 25px 95px;
-    border-color: orange;
-    background-color: orange;
-  }*/
-
-.btn-secondary {
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 1.5px;
-    color: black;
-    font-size: 10px;
-    padding: 10px 70px;
-    margin: 25px 20px 0px 20px;
-    border-color: white;
-    background-color: white;
-  }
-
-.btn-primary {
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: 1.5px;
-  font-size: 20px;
-  padding: 10px 120px;
-  margin-top: 50px;
-  border-color: orange;
-  background-color: orange;
-}
-
-
-.hometext a {
-  font-size: 45px;
-}
-
-
-
-/*h1 {
-    font-size:5.8vw;
-    padding-top: 5%;
-}*/
-
-  h2 {
-    font-size: 65px;
-    padding-top: 50px;
-    padding-bottom: 10px;
-  }
-
-  h3 {
-    font-size: 25px;
-    padding-bottom: 100px;
-    /*padding: 50px, 10px;*/
-  }
-
-  .hometext {
-    text-align: center;
-    padding-top: 60px;
-    /*padding-bottom: 10px;*/
+  .column-callouts h2 {
+      font-size: 8vh;
     }
+
+  .column-callouts h3 {
+    font-size: 4vh;
+    line-height: 8vh;
   }
-  /*.hometext h3 {
-    margin: 100px;
-    padding-bottom: 50px;
-  }*/
 
+  .column-callouts .btn {
+    font-size: 3vh;
+  }
 
+  .quote-text h3 {
+    font-size: 4vh;
+    margin: 0 40vh;
+  }
 
-/*
+  .quote-text i {
+    font-size: 4vh;
+    margin: 0 40vh;
+  }
 
-Notes
+  .quote-text h4 {
+    font-size: 4vh;
+    margin: 0 40vh 5vh 0;
+  }
 
--- BG Shorthand:
-background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;
-
--- Font Shorthand:
-font: font-style font-variant font-weight font-size/line-height font-family;
-
--- Styles:
-h1 jumbotron
-h2 panel titles
-h3 panel content
-h4 quote italics
-
-*/
+}
