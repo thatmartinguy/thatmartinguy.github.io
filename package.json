@@ -1,0 +1,26 @@
+{
+  "name": "thatmartinguy.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup": "npm i && npm i -g gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewmartin/thatmartinguy.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewmartin/thatmartinguy.github.io/issues"
+  },
+  "homepage": "https://github.com/andrewmartin/thatmartinguy.github.io#readme",
+  "dependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
